@@ -2,7 +2,7 @@
 set -e  # 遇到错误立即退出
 
 # 克隆指定版本的内核源码
-git clone https://github.com/Aospa-raphael-unofficial/linux.git --branch sm8150/$1 --depth 1 linux
+git clone https://github.com/proxer05/linux.git --branch sm8150/$1 --depth 1 linux
 
 # 应用 builddeb 补丁
 patch linux/scripts/package/builddeb < builddeb.patch
