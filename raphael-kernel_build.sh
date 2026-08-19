@@ -12,7 +12,7 @@ git add .
 git commit -m "builddeb: Add Qcom SM8150 DTBs to boot partition"
 
 # 下载内核配置文件
-wget -O arch/arm64/configs/raphael.config https://raw.githubusercontent.com/GengWei1997/kernel-deb/refs/heads/main/uboot-raphael.config
+wget -O arch/arm64/configs/raphael.config https://raw.githubusercontent.com/GengWei1997/kernel-deb/refs/heads/7.2/raphael.config
 
 echo "CONFIG_ISCSI_TCP=y" >> arch/arm64/configs/raphael.config
 echo "CONFIG_ZRAM_BACKEND_LZ4=y" >> arch/arm64/configs/raphael.config
